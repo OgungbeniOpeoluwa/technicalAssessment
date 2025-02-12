@@ -107,6 +107,9 @@ technicalAssessment/
 ├── main.go # Main program entry point
 ├── README.md
 ├── log.txt # Sample log file
+├── logs.txt # Empty Sample log file for test
+├── go.mod
+├── go.sum
 ```
 
 ## Concurrency Details
