@@ -41,7 +41,7 @@ Before running the project, ensure you have the following installed:
 
 ## Usage
 
-1. ### Concurrent Log Processing
+### 1. Concurrent Log Processing
 
 To analyze a log file and count keyword occurrences:
 
@@ -57,7 +57,7 @@ To analyze a log file and count keyword occurrences:
    - {ERROR 2}
    - {DEBUG 1}
 
-5. ### Prime Palindrome Finder
+### 2. Prime Palindrome Finder
 
 To find the first N prime palindromic numbers and calculate their sum:
 
@@ -109,15 +109,15 @@ technicalAssessment/
 ├── log.txt # Sample log file
 ```
 
-# Concurrency Details
+## Concurrency Details
 
-## Log Processing
+### Log Processing
 
 **Uses Goroutines to read the log file in chunks**.
 
 **Uses channels to communicate keyword counts between Goroutines**.
 
-## Prime Palindrome Finder
+### Prime Palindrome Finder
 
 **Uses Goroutines to check numbers for prime and palindromic properties concurrently**.
 
