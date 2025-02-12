@@ -35,11 +35,13 @@ Before running the project, ensure you have the following installed:
    ```
 
 2. Navigate to the project directory:
+   ```
    cd technicalAssessment
+   ```
 
 ## Usage
 
-1. # Concurrent Log Processing
+1. ### Concurrent Log Processing
 
 To analyze a log file and count keyword occurrences:
 
@@ -48,14 +50,14 @@ To analyze a log file and count keyword occurrences:
 2. Enter the file path when prompted:
    - Enter FilePath: log.txt
 3. Enter the keywords (separated by comma):
-   - Enter keywords (separated by comma): INFO ERROR DEBUG
+   - Enter keywords (separated by comma): INFO,ERROR,DEBUG
 4. The program will output the keyword counts:
 
    - {INFO 3}
    - {ERROR 2}
    - {DEBUG 1}
 
-5. # Prime Palindrome Finder
+5. ### Prime Palindrome Finder
 
 To find the first N prime palindromic numbers and calculate their sum:
 
@@ -66,31 +68,35 @@ To find the first N prime palindromic numbers and calculate their sum:
 3. The program will output the sum:
    - Sum of the first 5 prime palindromic numbers: 28
 
-# Example Input and Output
+## Example Input and Output
 
-## Example 1: Log Processing
+### Example 1: Log Processing
 
-### Input:
+#### Input:
 
-Enter FilePath: log.txt
-Enter keywords (separated by comma): INFO,ERROR,DEBUG
+- Enter FilePath: log.txt
 
-### Output:
+- Enter keywords (separated by comma): INFO,ERROR,DEBUG
 
-{DEBUG 1} {ERROR 2} {INFO 3}
+#### Output:
+
+- {DEBUG 1}
+- {ERROR 2}
+- {INFO 3}
 
 ## Example 2: Prime Palindrome Finder
 
 ### Input:
 
-Enter N: 5
+- Enter N: 5
 
 ### Output:
 
-Sum of the first 5 prime palindromic numbers: 28
+- Sum of the first 5 prime palindromic numbers: 28
 
-# Project Structure
+## Project Structure
 
+```
 technicalAssessment/
 ├── core/
 │ ├── file_processor.go # Log processing logic
@@ -101,17 +107,20 @@ technicalAssessment/
 ├── main.go # Main program entry point
 ├── README.md # This file
 ├── log.txt # Sample log file
+```
 
 # Concurrency Details
 
 ## Log Processing
 
 **Uses Goroutines to read the log file in chunks**.
+
 **Uses channels to communicate keyword counts between Goroutines**.
 
 ## Prime Palindrome Finder
 
 **Uses Goroutines to check numbers for prime and palindromic properties concurrently**.
+
 **Uses channels to collect results and signal completion**.
 
 # Error Handling
@@ -119,6 +128,7 @@ technicalAssessment/
 The program handles the following errors gracefully:
 
 **File not found**
+
 **Error opening the log file**.
 
 # License
