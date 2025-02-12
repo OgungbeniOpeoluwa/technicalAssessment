@@ -3,7 +3,6 @@ package core
 import (
 	"bufio"
 	"fmt"
-	"log"
 	"os"
 	"sort"
 	"strings"
@@ -83,7 +82,6 @@ func SortKeywordByFrequencyInDecendingOrder(keywordCounts map[string]int) []Proc
 	sort.Slice(sortedCounts, func(i, j int) bool {
 		return sortedCounts[i].Value > sortedCounts[j].Value
 	})
-	log.Println(sortedCounts)
 	return sortedCounts
 
 }

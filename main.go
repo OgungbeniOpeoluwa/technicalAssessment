@@ -15,18 +15,19 @@ func main() {
 	fmt.Print("Enter FilePath: ")
 	fmt.Scan(&filePath)
 
-	fmt.Print("Enter keywords (separated by spaces): ")
+	fmt.Print("Enter keywords (separated by comma): ")
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
-	keywords := strings.Fields(scanner.Text())
-	log.Println(keywords)
+	keywords := strings.Split(scanner.Text(), ",")
 
 	keywordCounts, err := core.ProcessLogFile(filePath, keywords)
 	if err != nil {
 		fmt.Println("Error Processing log file:", err)
 		return
 	}
-	log.Println(keywordCounts)
+	for _, v := range keywordCounts {
+		log.Println(v)
+	}
 
 	// run prime panlidrome
 	var N int

@@ -18,7 +18,7 @@ func TestProcessFilesThrowsErrorIfFileDoesntExists(t *testing.T) {
 }
 
 func TestProcessFilesReturnsEmptyIfFileIsEmpty(t *testing.T) {
-	filePath := "/Users/tife/ConcurrentLogProcessor/log.txt"
+	filePath := "/Users/tife/ConcurrentLogProcessor/logs.txt"
 	keywords := []string{"INFO", "ERROR", "DEBUG"}
 
 	keywordCounts, err := ProcessLogFile(filePath, keywords)
