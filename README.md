@@ -99,13 +99,13 @@ To find the first N prime palindromic numbers and calculate their sum:
 ```
 technicalAssessment/
 ├── core/
-│ ├── file_processor.go # Log processing logic
-│ ├── prime_palindrome.go # Prime palindrome logic
-│ ├── file_processor_test.go # Log processing tests
-│ ├── prime_palindrome_test.go # Prime palindrome tests
+│ ├── file_processor.go
+│ ├── prime_palindrome.go
+│ ├── file_processor_test.go
+│ ├── prime_palindrome_test.go
 │
 ├── main.go # Main program entry point
-├── README.md # This file
+├── README.md
 ├── log.txt # Sample log file
 ```
 
